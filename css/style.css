@@ -114,16 +114,18 @@ body {
     width: calc(100vw / 6);
     height: calc(100vw / 6);
     padding: 10px;
-    object-fit: cover;
-}
-
-img {
     
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .txt-img {
-    justify-content: center;
-    align-items: center;
+    width: calc(100vw / 6);
+    text-align: center;
 }
 
 #soundbar {
