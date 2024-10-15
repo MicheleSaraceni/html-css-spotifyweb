@@ -1,0 +1,76 @@
+/* Global Styles */
+
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+  }
+
+.debug {
+    border: 1px solid red;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Flex*/
+
+.d-flex {
+    display: flex;
+    color: var(--color-light);
+}
+
+/*Color*/
+
+
+
+/*Page*/
+
+#soundbar {
+    flex: 0 0 100px;
+}
+
+#page {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    flex-direction: column;
+    
+}
+
+.update {
+    height: 100px;
+}
+
+.musica {
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    flex: 0 0 230px;
+    flex-direction: column;
+}
+
+/*Media*/
