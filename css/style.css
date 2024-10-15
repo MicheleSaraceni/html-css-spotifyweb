@@ -43,6 +43,9 @@ body {
     color: var(--color-light);
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
 
 /*Page*/
 #page {
@@ -106,13 +109,17 @@ body {
     
 }
 
+
+#recently {
+    width: 100%;
+}
 .col {
+    width: calc(100% / 6);
     flex-direction: column;
 }
 
 .img {
-    width: calc(100vw / 6);
-    height: calc(100vw / 6);
+     
     padding: 10px;
     
 }
@@ -124,7 +131,7 @@ img {
 }
 
 .txt-img {
-    width: calc(100vw / 6);
+    width: 100%;
     text-align: center;
 }
 
