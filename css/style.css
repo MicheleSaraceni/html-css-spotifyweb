@@ -21,6 +21,7 @@ body {
 .wrapper {
     height: 100vh;
     flex-direction: column;
+    /*overflow: hidden;*/
 }
 
 /* Reset */
@@ -76,9 +77,21 @@ body {
     z-index: 1000;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.5)
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
 
+}
+
+.btn-update {
+    border: 1px solid var(--color-lightgrey);
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-update:hover {
+    transform: scale(1.2);
 }
 
 .musica {
@@ -95,9 +108,9 @@ body {
 }
 
 .menu-top {
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
-    width: 50%;
+    width: 60%;
 }
 
 .menu-top li {
@@ -105,30 +118,41 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--color-lightgrey);
+    padding: 5px;
     font-size: 12px;
 }
 
+.menu-top li:hover {
+    color: var(--color-light);
+}
+
 .green-line {
+    border: 1px solid transparent;
+    width: 20px;
+}
+
+.menu-top li:hover .green-line {
     border: 1px solid var(--color-highlight);
     width: 20px;
-    
 }
 
 h2 {
-    font-size: 20;
-    padding: 20px 0;
+    padding-top: 40px;
 }
 
-#recently {
+.row {
     width: 100%;
+    padding-top: 30px;
 }
+
 .col {
     width: calc(100% / 6);
     flex-direction: column;
+
 }
 
 .img {
-     
+    position: relative;
     padding: 5px;
     
 }
@@ -137,6 +161,26 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.layover {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 14px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: var(--color-light);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.img:hover .layover {
+    opacity: 1;
 }
 
 .txt-img {
@@ -151,26 +195,38 @@ span {
     font-size: 12px;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
 #soundbar {
     flex: 0 0 100px;
     background-color: var(--color-darkgrey);
 }
 
-.btn-update {
-    /*fare non opaco*/
-}
-
 
 /*Media*/
 
-@media screen and (min-width: 576px) {
-    
+@media screen and (max-width: 1024px) {
+    .col {
+        width: calc(100% / 4);
+    }
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: 768px) {
+    .col {
+        width: 50%;
+    }
 }
 
-@media screen and (min-width: 992px) {
-    
+@media screen and (max-width: 576px) {
+    .col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .raw .col {
+        
+    }
 }
