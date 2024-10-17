@@ -121,6 +121,7 @@ i {
     padding: 5px 12px;
     font-size: 14px;
     color: var(--color-lightgrey);
+    height: 100%;
 }
 
 h4 {
@@ -210,7 +211,7 @@ h4 {
     top: 0;
     left: 200px;
     height: 70px;
-    width: calc(100% - 230px);
+    width: calc(100% - 200px);
     z-index: 1000;
     justify-content: flex-end;
     align-items: center;
@@ -341,8 +342,52 @@ span {
 #soundbar {
     flex: 0 0 70px;
     background-color: var(--color-darkgrey);
+    justify-content: space-between;
 }
 
+#soundbar i {
+    padding: 10px;
+}
+
+.bottom-box {
+    width: 230px;
+    align-items: center;
+}
+
+.bottom-c-box {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box {
+    justify-content: space-around;
+
+}
+
+.play-big {
+    font-size: 30px;
+}
+
+.top-soundbar {
+    align-items: center;
+}
+
+.left-box .img {
+    width: 69px;
+    height: 69px;
+    padding: 15px; 
+}
+
+.brano {
+    font-size: 10px;
+}
+
+.brano strong {
+    font-size: 14px;
+    color: var(--color-light);
+}
 
 /*Media*/
 
@@ -358,8 +403,8 @@ span {
     }
 
     .update {
-        left: 75px;
-        width: calc(100% - 75px);
+        left: 60px;
+        width: calc(100% - 60px);
     }
 
     .menu {
