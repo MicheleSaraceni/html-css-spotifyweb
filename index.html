@@ -16,8 +16,15 @@
     <div class="d-flex wrapper">
         <main id="page" class="d-flex">
             
-            <!--Menu left-->
+
+                <!-------- Menu left --------->
+            <!---- Logo - Lista - Playlist - user ---->
+
+            
             <div class="menu p-relative d-flex">
+
+                <!---- Menu left - Logo ---->
+
                 <div class="logo d-flex">
                     <div class="p-relative">
                         <img class="p-absolute d-flex logo-small" src="./img/logo-small.svg" alt="logo spotify small">
@@ -25,8 +32,12 @@
                     </div>
                 </div>
 
+                <!---- Menu left - Lista ---->
+                <!-- Home - Cerca - Libreria -->
+
                 <div class="list d-flex ">
                     <ul>
+                        <!-- Home -->
                         <li>
                             <a class="d-flex" href="#">
                                 <div class="blue-line-left"></div>
@@ -34,6 +45,7 @@
                                 <span>Home</span></strong> 
                             </a>
                         </li>
+                        <!-- Cerca -->
                         <li>
                             <a class="d-flex" href="#">
                                 <div class="blue-line-left"></div>
@@ -41,6 +53,7 @@
                                 <span>Cerca</span></strong> 
                             </a>
                         </li>
+                        <!-- Libreria -->
                         <li>
                             <a class="d-flex" href="#">
                                 <div class="blue-line-left"></div>
@@ -51,13 +64,17 @@
                     </ul>
                 </div>
 
+                <!---- Menu-left - Playlist ---->
+                    <!-- Crea - Lista -->
 
                 <div class="d-flex playlist">
                     <h4>PLAYLIST</h4>
+                    <!-- Crea -->
                     <div class="c-playlist d-flex">
                         <i class="fa-regular fa-square-plus"></i>
                          <strong>Crea Playlist</strong>
                     </div>
+                    <!-- Lista -->
                     <ul>
                         <li>
                             <strong><a href="#">Nome Playlist</a></strong>
@@ -82,14 +99,18 @@
                         </li>
                     </ul>
                     
+                <!---- Menu-left - User (Footer-menu) ---->
+                        <!-- Installa - User -->
 
                 </div>
                 <div class="user d-flex p-absolute">
+                    <!-- Installa -->
                     <div class="app d-flex">
                         <i class="fa-regular fa-circle-down"></i>
                         <Strong>Installa app</Strong>
                     </div>
                     <div class="line"></div>
+                    <!-- User -->
                     <div class=" footer-menu d-flex">
                         <div class="circle img">
                             <img src="./img/profile.svg" alt="Foto profilo">
@@ -101,14 +122,21 @@
                 </div>
             </div>
 
-            <!--Main-->
+
+            <!-------- Main --------->
+
+
             <div class="content d-flex">
+
+                <!---- Main - Update(top-bar) ---->
 
                 <div class="update d-flex">
                     <div class="btn-update">
                         EFFETTUA L'UPDATE
                     </div>
                 </div>
+
+                <!---- Main - Menu-top ---->
 
                 <div class="musica d-flex">
                     <div class="container-menu d-flex">
@@ -140,19 +168,20 @@
                         </ul>
                     </div>
                     
-                    <!--recently-->
-                    <h2>Recently played</h2>    
-                    <section class="row wrap d-flex">
-                        
-                        <div class="col">
+                            <!---- Main - Page ---->
+                    <!-- Recently - creato-per - Artisti -->
 
+                    <!-- Recently -->
+                    <h2>Recently played</h2>    
+                    <section class="row wrap d-flex">  
+
+                        <div class="col">
                             <div class="img">
                                 <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
                                 <div class="layover">
                                 <i class="fa-regular fa-circle-play"></i>
                                 </div>
-                            </div>
-                            
+                            </div>                           
                             <div class="txt-img">
                                 <strong>Heavy Metal</strong><br>
                                 <span>Subtitle</span>
@@ -226,13 +255,12 @@
                         
                     </section>
 
-                    <!--creato-per-->
+                    <!-- creato-per -->
                     <h2>Creato per John Doe</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti.</span>    
-                    <section class="row wrap d-flex">
-                        
-                        <div class="col">
+                    <section class="row wrap d-flex"> 
 
+                        <div class="col">
                             <div class="img">
                                 <img src="./img/radar.jpeg" alt="Relase Radar">
                                 <div class="layover">
@@ -258,11 +286,11 @@
                         
                     </section>
                 
-                    <!--artisti-->
+                    <!-- artisti -->
                     <h2>Creato per John Doe</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti.</span>    
                     <section class="row wrap d-flex">
-                        
+
                         <div class="col">
                             <div class="img">
                                 <img class="circle" src="./img/youg.jpeg" alt="Youg">
@@ -288,18 +316,20 @@
                         </div>
                         
                     </section>
-                        
-                    </section>
-
-
                 </div>
-
             </div>
         </main>
 
-        <!-- soundbar -->
+            <!-------- Soundbar(footer) --------->
+        <!---- left-box - central-box - right-box ---->
+
+
         <footer id="soundbar" class="d-flex">
             
+
+            <!---- Soundbar - left-box ---->
+            <!-- Recently - creato-per - Artisti -->
+
             <div class="d-flex left-box bottom-box">
                 <div class="img">
                     <img src="./img/sinister.jpeg" alt="Copertina brano corrente">
@@ -313,8 +343,15 @@
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
+
+            <!---- Soundbar - central-box ---->
+            <!-- top-soundbar[icon(a)] - line-soundbar -->
+
             <div class="d-flex bottom-c-box">
+                <!-- top-soundbar(icon[a]) -->
                 <div class="d-flex top-soundbar">
+
+                    <!-- icon(a) -->
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <i class="play-big fa-regular fa-circle-play"></i>
@@ -322,25 +359,34 @@
                     <i class="fa-solid fa-arrow-rotate-right"></i>
                 </div>
 
+                <!-- line-soundbar -->
                 <div class="d-flex line-soundbar">
                     o:25
                     <div class="bar">
                     </div>
                     4:35
                 </div>
-
             </div>
+
+            <!---- Soundbar - right-box ---->
+            <!-- icon(a) - line-soundbar -->
+
             <div class="d-flex right-box bottom-box">
+
+                <!-- icon(a) -->
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-volume-high"></i>
+
+                <!-- line-soundbar -->
                 <div class="none line-soundbar">
                     <div class="bar">
                     </div>
                 </div>
             </div>
+            
         </footer>
-</div>
+    </div>
 
 </body>
 
