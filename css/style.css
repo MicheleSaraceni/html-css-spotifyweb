@@ -143,6 +143,7 @@ i:hover {
     font-size: 14px;
     color: var(--color-lightgrey);
     height: 100%;
+    margin-bottom: 100px;
 }
 
 h4 {
